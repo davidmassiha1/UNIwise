@@ -9,7 +9,7 @@ pipeline {
         GOPATH = "${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_ID}"
     }
     
-        
+      stages {  
         stage('Build') {
             steps {
                 echo 'Compiling and building'
@@ -20,4 +20,5 @@ pipeline {
        
         
     }
+}
     
